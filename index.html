@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-center text-5xl font-extrabold mt-10">Our Calculate in our dialy Bazar</h1>
+    <div class="mt-10 space-y-5 text-lg w-[95%] mx-auto">
+        <p class="p-4 text-2xl text-left rounded-md sm:text-center">Total Ammount in Your Account = <span id="main-balanced" class="bg-yellow-200 px-5 py-2 rounded-xl "> 0</span></p>
+        <div class="flex flex-col justify-center space-y-3 sm:space-x-3 px-4 sm:flex-row">
+            <label class="text-2xl" for="">Add Money Card: </label>
+            <input type="number" class="bg-gray-400 px-3 py-3 rounded-md w-full sm:w-auto">
+            <button id="add-money" type="button" class="bg-red-500 px-10 py-3 rounded-md text-white">ADD</button>
+        </div>
+        <div class="flex flex-col justify-center space-y-3 sm:space-x-3 px-4 sm:flex-row">
+            <label for="" class="text-2xl">Add Your Expense: </label>
+            <input type="number" class="bg-gray-400 px-3 py-3 rounded-md">
+            <button id="add-expense" type="button" class="bg-red-500 px-10 py-3 rounded-md text-white">ADD</button>
+        </div>
+        <div class="flex flex-col justify-center space-y-3 sm:space-x-3 px-4 sm:flex-row">
+            <label for="" class="text-2xl">Withdraw Money: </label>
+            <input type="number" class="bg-gray-400 px-3 py-3 rounded-md">
+            <button id="withdraw" type="button" class="bg-red-500 px-5 py-3 rounded-md text-white">WITDRAW</button>
+        </div>
+    </div>
+    <script src="./js/display.js"></script>
+</body>
+
+</html>
